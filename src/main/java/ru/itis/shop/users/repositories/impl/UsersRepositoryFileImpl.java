@@ -39,7 +39,7 @@ public class UsersRepositoryFileImpl implements UsersRepository {
             throw new IllegalStateException(e);
         }
 
-        return null;
+        return users;
     }
 
     @Override

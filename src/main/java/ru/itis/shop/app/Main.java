@@ -15,10 +15,10 @@ public class Main {
         EmailValidator emailValidator = new SimpleEmailValidator();
         UsersService usersService = new UsersService(usersRepository, emailValidator);
         UsersUIConsole ui = new UsersUIConsole(usersService);
-        ui.printRegistrationMenu();
-        usersRepository.delete("511a0c03-e7d9-446c-b1d0-78d90d53ec22");
-        usersRepository.findById("179ad7ef-c8d9-4083-beb6-a8cf795b012c").get();
-        usersRepository.update(new User("245dg5ry-f136-0409-lel2-u7vb234f654i", "Elina","elina@gmail.com","4782"));
+        //ui.printRegistrationMenu();
+        usersRepository.delete("179ad7ef-c8d9-4083-beb6-a8cf795b012c");
+        usersRepository.findById("9049db7f-9692-4267-88ae-315de524421d").get();
+        usersRepository.update(new User("245dg5ry-f136-0409-lel2-u7vb234f654i", "Elinaa","elina@gmail.com","4782"));
         for (User user: usersRepository.findAll()) {
             System.out.println(user.toString());
         }
